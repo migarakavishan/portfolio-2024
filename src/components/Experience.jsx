@@ -7,7 +7,6 @@ import jsimage from "../assets/jsImage.png";
 import phpimage from "../assets/phpImage.png";
 import reactimage from "../assets/reactImage.png";
 import tailwindimage from "../assets/tailwindImage.png";
-
 import aiimage from "../assets/aiImage.png";
 import dartImage from "../assets/dartImage.png";
 import figmaimage from "../assets/figmaImage.png";
@@ -20,98 +19,59 @@ const Experience = () => {
   return (
     <div
       name="experience"
-      className="bg-gradient-to-t from-gray-800 to-black h-full w-screen py-96"
+      className="bg-gradient-to-t from-gray-800 to-black w-full text-white py-20"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full text-white">
-        <div className="">
-          <div>
-            <p className="text-6xl font-bold flex justify-center">Experience</p>
-          </div>
-          <p className="text-2xl mt-20 text-gray-400">
-            There are the technologies I've worked with
+      <div className="max-w-screen-lg mx-auto p-4">
+        <div className="text-center mb-12">
+          <p className="text-6xl font-bold">Experience</p>
+          <p className="text-xl mt-6 text-gray-400">
+            Technologies I have worked with
           </p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-14 text-center py-8 px-12 sm:px-10">
-          <div className="shadow-xl hover:scale-105 duration-500 py-2 rounded-lg">
-            <img src={flutterImage} alt="" className="w-40 mx-auto" />
-            <p className="text-gray-300 mt-4">Flutter</p>
-          </div>
-          <div className="shadow-xl hover:scale-105 duration-500 py-2 rounded-lg">
-            <img src={dartImage} alt="" className="w-40 mx-auto" />
-            <p className="text-gray-300 mt-4">Dart</p>
-          </div>
-          <div className="shadow-xl hover:scale-105 duration-500 py-2 rounded-lg">
-            <img src={htmlimage} alt="" className="w-40 mx-auto" />
-            <p className="text-gray-300 mt-4">HTML</p>
-          </div>
-
-          <div className="shadow-xl hover:scale-105 duration-500 py-2 rounded-lg">
-            <img src={cssimage} alt="" className="w-40 mx-auto" />
-            <p className="text-gray-300 mt-4">CSS</p>
-          </div>
-
-          <div className="shadow-xl hover:scale-105 duration-500 py-2 rounded-lg">
-            <img src={jsimage} alt="" className="w-40 mx-auto" />
-            <p className="text-gray-300 mt-4">JavaScript</p>
-          </div>
-
-          <div className="shadow-xl hover:scale-105 duration-500 py-2 rounded-lg">
-            <img src={tailwindimage} alt="" className="w-40 mx-auto" />
-            <p className="text-gray-300 mt-4">Tailwind</p>
-          </div>
-
-          <div className="shadow-xl hover:scale-105 duration-500 py-2 rounded-lg">
-            <img src={bootstrapimage} alt="" className="w-40 mx-auto" />
-            <p className="text-gray-300 mt-4">Bootstrap</p>
-          </div>
-
-          <div className="shadow-xl hover:scale-105 duration-500 py-2 rounded-lg">
-            <img src={reactimage} alt="" className="w-40 mx-auto" />
-            <p className="text-gray-300 mt-4">React</p>
-          </div>
-
-          <div className="shadow-xl hover:scale-105 duration-500 py-2 rounded-lg">
-            <img src={phpimage} alt="" className="w-40 mx-auto " />
-            <p className="text-gray-300 mt-10 ">Php</p>
-          </div>
-
-          <div className="shadow-xl hover:scale-105 duration-500 py-2 rounded-lg">
-            <img src={githubimage} alt="" className="w-40 mx-auto" />
-            <p className="text-gray-300 mt-4">Github</p>
-          </div>
-          <div className="shadow-xl hover:scale-105 duration-500 py-2 rounded-lg">
-            <img src={firebaseImage} alt="" className="w-40 mx-auto" />
-            <p className="text-gray-300 mt-4">Firebase</p>
-          </div>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 px-4 sm:px-0">
+          {[
+            { image: flutterImage, title: "Flutter" },
+            { image: dartImage, title: "Dart" },
+            { image: htmlimage, title: "HTML" },
+            { image: cssimage, title: "CSS" },
+            { image: jsimage, title: "JavaScript" },
+            { image: tailwindimage, title: "Tailwind" },
+            { image: bootstrapimage, title: "Bootstrap" },
+            { image: reactimage, title: "React" },
+            { image: phpimage, title: "Php" },
+            { image: githubimage, title: "GitHub" },
+            { image: firebaseImage, title: "Firebase" },
+          ].map(({ image, title }) => (
+            <div
+              key={title}
+              className="shadow-xl py-6 rounded-lg flex flex-col items-center"
+            >
+              <img src={image} alt={title} className="w-40 h-30" />
+              <p className="text-gray-300 mt-4">{title}</p>
+            </div>
+          ))}
         </div>
 
-        <div>
-          <p className="text-2xl mt-20 text-gray-400">
-            There are the softwares I've worked with
-          </p>
+        <div className="text-center mt-20 mb-12">
+          <p className="text-xl text-gray-400">Software tools I've worked with</p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-14 text-center py-8 px-10 sm:px-10">
-          <div className="shadow-xl hover:scale-105 duration-500 py-2 rounded-lg">
-            <img src={figmaimage} alt="" className="w-24 mx-auto" />
-            <p className="text-gray-300 mt-4">Figma</p>
-          </div>
-
-          <div className="shadow-xl hover:scale-105 duration-500 py-2 rounded-lg">
-            <img src={aiimage} alt="" className="w-40 mx-auto" />
-            <p className="text-gray-300 mt-4">Illustrator</p>
-          </div>
-
-          <div className="shadow-xl hover:scale-105 duration-500 py-2 rounded-lg">
-            <img src={psimage} alt="" className="w-40 mx-auto" />
-            <p className="text-gray-300 mt-4">Photoshop</p>
-          </div>
-
-          <div className="shadow-xl hover:scale-105 duration-500 py-2 rounded-lg">
-            <img src={xdimage} alt="" className="w-40 mx-auto" />
-            <p className="text-gray-300 mt-4">Xd</p>
-          </div>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 px-4 sm:px-0">
+          {[
+            { image: figmaimage, title: "Figma" },
+            { image: aiimage, title: "Illustrator" },
+            { image: psimage, title: "Photoshop" },
+            { image: xdimage, title: "Xd" },
+          ].map(({ image, title }) => (
+            <div
+              key={title}
+              className="shadow-xl py-6 rounded-lg flex flex-col items-center"
+            >
+              <img src={image} alt={title} className="w-40 h-30" />
+              <p className="text-gray-300 mt-4">{title}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
