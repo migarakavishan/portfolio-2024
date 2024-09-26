@@ -21,7 +21,7 @@ const Experience = () => {
       name="experience"
       className="bg-gradient-to-t from-gray-800 to-black w-full text-white py-20"
     >
-      <div className="max-w-screen-lg mx-auto p-4">
+      <div className="max-w-screen-lg mx-auto py-28 sm:py-12">
         <div className="text-center mb-12">
           <p className="text-6xl font-bold">Experience</p>
           <p className="text-xl mt-6 text-gray-400">
@@ -47,7 +47,7 @@ const Experience = () => {
               key={title}
               className="shadow-xl py-6 rounded-lg flex flex-col items-center"
             >
-              <img src={image} alt={title} className="w-40 h-30" />
+              <img src={image} alt={title} className="w-24 h-24" />
               <p className="text-gray-300 mt-4">{title}</p>
             </div>
           ))}
@@ -68,7 +68,7 @@ const Experience = () => {
               key={title}
               className="shadow-xl py-6 rounded-lg flex flex-col items-center"
             >
-              <img src={image} alt={title} className="w-40 h-30" />
+              <img src={image} alt={title} className="w-24 h-24" />
               <p className="text-gray-300 mt-4">{title}</p>
             </div>
           ))}
