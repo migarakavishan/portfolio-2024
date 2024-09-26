@@ -37,7 +37,7 @@ const NavBar = () => {
       {/* Mobile Menu Icon */}
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-20 text-gray-500 md:hidden"
+        className="cursor-pointer pr-1 z-20 text-gray-500 md:hidden"
         aria-label={nav ? "Close Menu" : "Open Menu"}
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}

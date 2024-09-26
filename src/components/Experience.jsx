@@ -21,9 +21,9 @@ const Experience = () => {
       name="experience"
       className="bg-gradient-to-t from-gray-800 to-black w-full text-white py-20"
     >
-      <div className="max-w-screen-lg mx-auto py-28 sm:py-12">
-        <div className="text-center mb-12">
-          <p className="text-6xl font-bold">Experience</p>
+      <div className="max-w-screen-lg mx-auto py-52 sm:py-12">
+        <div className="mb-12">
+          <p className="text-6xl font-bold text-center ">Experience</p>
           <p className="text-xl mt-6 text-gray-400">
             Technologies I have worked with
           </p>
@@ -53,7 +53,7 @@ const Experience = () => {
           ))}
         </div>
 
-        <div className="text-center mt-20 mb-12">
+        <div className=" mt-20 mb-12">
           <p className="text-xl text-gray-400">Software tools I've worked with</p>
         </div>
 

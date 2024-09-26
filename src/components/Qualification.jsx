@@ -8,7 +8,7 @@ const Qualification = () => {
     >
       <div className="max-w-screen-lg mx-auto p-4 justify-center w-full h-full text-white">
         <div>
-          <p className="text-6xl font-bold flex justify-center">
+          <p className="text-5xl sm:text-6xl font-bold flex justify-center">
             Qualification
           </p>
         </div>
