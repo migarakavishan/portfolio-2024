@@ -1,27 +1,27 @@
 import React from "react";
+import aiimage from "../assets/aiImage.png";
 import bootstrapimage from "../assets/bootstrapImage.png";
 import cssimage from "../assets/cssimage.png";
-import githubimage from "../assets/githubImage.png";
-import htmlimage from "../assets/html.png";
-import jsimage from "../assets/jsImage.png";
-import phpimage from "../assets/phpImage.png";
-import reactimage from "../assets/reactImage.png";
-import tailwindimage from "../assets/tailwindImage.png";
-import aiimage from "../assets/aiImage.png";
 import dartImage from "../assets/dartImage.png";
 import figmaimage from "../assets/figmaImage.png";
 import firebaseImage from "../assets/firebaseImage.webp";
 import flutterImage from "../assets/flutterImage.png";
+import githubimage from "../assets/githubImage.png";
+import htmlimage from "../assets/html.png";
+import jsimage from "../assets/jsImage.png";
+import phpimage from "../assets/phpImage.png";
 import psimage from "../assets/psImage.png";
+import reactimage from "../assets/reactImage.png";
+import tailwindimage from "../assets/tailwindImage.png";
 import xdimage from "../assets/xdImage.png";
 
 const Experience = () => {
   return (
     <div
       name="experience"
-      className="bg-gradient-to-t from-gray-800 to-black w-full text-white py-20"
+      className="bg-gradient-to-t from-gray-800 to-black w-full text-white sm:py-10 py-96 pr-2 pl-2"
     >
-      <div className="max-w-screen-lg mx-auto py-52 sm:py-12">
+      <div className="max-w-screen-lg mx-auto ">
         <div className="mb-12">
           <p className="text-6xl font-bold text-center ">Experience</p>
           <p className="text-xl mt-6 text-gray-400">
