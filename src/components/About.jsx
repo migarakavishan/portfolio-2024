@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full bg-gradient-to-b h-screen from-gray-800 to-black text-white sm:pt-10 pt-80"
+      className="w-full bg-gradient-to-b h-screen from-gray-800 to-black text-white sm:pt-10 pt-96"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8 py-2">
@@ -26,6 +26,14 @@ const About = () => {
             experiences.
           </p>
           <br />
+          <p className="text-xl text-gray-300">📱 Mobile App Development:</p>
+          <p className="text-gray-400">
+            As a Flutter developer, I specialize in crafting mobile apps that
+            run smoothly on both Android and iOS platforms. My expertise
+            includes Dart, Flutter framework, and working with Firebase, and
+            third-party integrations to deliver top-notch cross-platform apps.
+          </p>
+          <br />
           <p className="text-xl text-gray-300">🎨 UI/UX Design:</p>
           <p className="text-gray-400">
             Design is a critical part of my development process. I approach each
@@ -34,14 +42,8 @@ const About = () => {
             prototypes, I create user flows that enhance the experience and
             align with the app's purpose.
           </p>
-          <br />
-          <p className="text-xl text-gray-300">📱 Mobile App Development:</p>
-          <p className="text-gray-400">
-            As a Flutter developer, I specialize in crafting mobile apps that
-            run smoothly on both Android and iOS platforms. My expertise
-            includes Dart, Flutter framework, and working with Firebase, and
-            third-party integrations to deliver top-notch cross-platform apps.
-          </p>
+          
+          
 
           <div className="flex justify-center py-8">
             <a href={fileUrl}>

@@ -6,14 +6,14 @@ const Qualification = () => {
       name="qualification"
       className="w-full h-screen from-gray-800 to-black bg-gradient-to-b"
     >
-      <div className="max-w-screen-lg mx-auto p-4 justify-center w-full h-full text-white">
+      <div className="max-w-screen-lg mx-auto pt-32 justify-center w-full h-full text-white">
         <div>
           <p className="text-5xl sm:text-6xl font-bold flex justify-center">
             Qualification
           </p>
         </div>
 
-        <div className="flex justify-center w-full my-10">
+        <div className="flex justify-center w-full my-10 p-4">
           <ol className="border-l border-neutral-100 dark:border-neutral-100">
             <li>
               <div className="flex-start flex items-center pt-3">

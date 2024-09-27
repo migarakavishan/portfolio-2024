@@ -48,7 +48,7 @@ const Footer = () => {
         <ul>
           <li className="text-3xl font-bold flex justify-between">Migara</li>
           <li className="text-sm text-gray-400">
-            Ui/Ux designer and Frontend developer
+            Mobile App Developer
           </li>
         </ul>
         <ul className="md:flex">
