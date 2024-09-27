@@ -9,9 +9,9 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="bg-gradient-to-t from-gray-800 to-black h-full w-full py-52"
+      className="bg-gradient-to-t from-gray-800 to-black h-full w-full "
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full py-10 sm:py-52 px-4 md:flex-row">
         <motion.div
           variants={fadeIn("right", 0.4)}
           initial="hidden"
@@ -53,7 +53,7 @@ const Home = () => {
           <img
             src={ProfileImage}
             alt="my profile"
-            className="rounded-2xl h-80 mx-auto max-w-md"
+            className="rounded-2xl sm:h-80 mx-auto max-w-md h-64"
           />
         </motion.div>
       </div>
