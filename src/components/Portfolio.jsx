@@ -8,6 +8,10 @@ import project2o1 from "../assets/project2.1.png";
 import project3o1 from "../assets/project3.1.png";
 import project4o1 from "../assets/project4.1.png";
 import project5o1 from "../assets/project5.1.png";
+import project6o1 from "../assets/project6.1.png";
+import project6o2 from "../assets/project6.2.png";
+import project7o1 from "../assets/project7.1.png";
+import project7o2 from "../assets/project7.2.png";
 
 const Portfolio = () => {
   const projects = [
@@ -59,6 +63,26 @@ const Portfolio = () => {
       githubLink: "https://github.com/migarakavishan/phone_book.git",
       technologies: ["Flutter", "Dart", "SQLite"],
     },
+    {
+      id: 6,
+      images: [project6o1,project6o2],
+      title: "Addidas Ecommerce App",
+      description:
+        "The Adidas E-commerce App is built with Dart and Flutter, using Firebase for authentication and data management. It allows users to browse Adidas products, add items to the cart, and securely make purchases via stripe payment gateway. With real-time updates and a user-friendly interface, the app offers a smooth shopping experience.",
+
+      githubLink: "https://github.com/migarakavishan/addidas_ecommerce_app.git",
+      technologies: ["Flutter", "Dart", "Firebase"],
+    },
+    {
+      id: 7,
+      images: [project7o1,project7o2],
+      title: "Apple Ecommerce App",
+      description:
+        "The Apple E-commerce App is developed with Dart and Flutter, utilizing Firebase for authentication and backend services. It enables users to browse and explore Apple products, add items to the cart, and manage their profiles. The app also includes an admin panel for product management. It provides a clean, intuitive experience for both users and administrators.",
+
+      githubLink: "https://github.com/migarakavishan/apple_ecommerce.git",
+      technologies: ["Flutter", "Dart", "Firebase"],
+    },
   ];
 
   return (
@@ -74,7 +98,7 @@ const Portfolio = () => {
           </p>
         </div>
 
-        <div className="flex flex-col space-y-8 px-12 py-8">
+        <div className="flex flex-col space-y-8 px-2 sm:px-10 py-8">
           {projects.map(
             ({ id, images, title, description, githubLink, technologies }) => (
               <div
@@ -82,7 +106,7 @@ const Portfolio = () => {
                 className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4"
               >
                 <ImageSlideshow images={images} />
-                <div className="flex flex-col w-2/3">
+                <div className="flex flex-col sm:w-2/3">
                   <h3 className="text-xl font-bold">{title}</h3>
                   <p className="text-gray-400 mt-2">{description}</p>
 
