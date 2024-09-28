@@ -12,6 +12,15 @@ import project6o1 from "../assets/project6.1.png";
 import project6o2 from "../assets/project6.2.png";
 import project7o1 from "../assets/project7.1.png";
 import project7o2 from "../assets/project7.2.png";
+import project8o1 from "../assets/project8.1.png";
+import project8o2 from "../assets/project8.2.png";
+import project9o1 from "../assets/project9.1.png";
+
+import project1 from "../assets/project1.png"
+import project2 from "../assets/project2.png"
+import project3 from "../assets/project3.png"
+import project4 from "../assets/project4.png"
+import project5 from "../assets/project5.png"
 
 const Portfolio = () => {
   const projects = [
@@ -83,6 +92,72 @@ const Portfolio = () => {
       githubLink: "https://github.com/migarakavishan/apple_ecommerce.git",
       technologies: ["Flutter", "Dart", "Firebase"],
     },
+    {
+      id: 8,
+      images: [project8o1,project8o2],
+      title: "Tomato Math Game",
+      description:
+      (
+        <>
+          The Tomato Math Game is web based Mathemetical game usign Tomato API for math equation. Created this applicaiton for my 3rd Year semester 1 COMPARATIVE INTEGRATED SYSTEMS subject final project. This game has players leaderboard, real-time updates and a user-friendly interfaces for smooth playing experience. Try the game out{" "}
+          <a
+            href="https://tomato-game.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 underline"
+          >
+            here
+          </a>
+          .
+        </>
+      ),
+
+      githubLink: "https://github.com/migarakavishan/tomato-game.git",
+      technologies: ["React js", "javascript", "Firebase"],
+    },
+    {
+      id: 9,
+      images: [project9o1],
+      title: "Pharmacy Management System",
+      description:
+        "Pharmacy web site admin and user site for Year2 Sem2 Final project",
+
+      githubLink: "https://github.com/migarakavishan/code-blenders-final-project.git",
+      technologies: ["html", "css", "php","javascript","mysql"],
+    },
+  ];
+
+  const uiuxProjects = [
+    {
+      id: 1,
+      image: project1,
+      title: "UI/UX Design Project 1",
+      link: "https://www.figma.com/design/OVSr0cVguOGpCpOkzcOBjJ/Pharmarcy?node-id=0-1&t=cm5hgrijsjdVkdW7-1",
+    },
+    {
+      id: 2,
+      image: project2,
+      title: "UI/UX Design Project 2",
+      link: "https://www.figma.com/design/aKSYO4Nn0AA5C6TY4k0jzA/food-app?node-id=0-1&t=MPpmqsQJ2W6hRsqN-1",
+    },
+    {
+      id: 3,
+      image: project3,
+      title: "UI/UX Design Project 3",
+      link: "https://www.figma.com/design/a6FyW5JLqI2MQSE1wkiGmP/shoe-app?node-id=0-1&t=vbLRRDxrvueF52hj-1",
+    },
+    {
+      id: 4,
+      image: project4,
+      title: "UI/UX Design Project 4",
+      link: "https://www.figma.com/design/ApMmsC3JduMLj2AruwT1DD/Pharmarcy-admin-page?node-id=0-1&t=2vi22rNm7uAwgFBF-1",
+    },
+    {
+      id: 5,
+      image: project5,
+      title: "UI/UX Design Project 5",
+      link: "https://www.figma.com/design/rfGZ1YDGXgWiwGFNdSFVQP/luxury-vehicle-ui?node-id=0-1&t=kxidqb8z23K2UAwc-1",
+    },
   ];
 
   return (
@@ -136,6 +211,32 @@ const Portfolio = () => {
             )
           )}
         </div>
+
+        {/* UI/UX Section */}
+        <div className="mt-16">
+        <p className="text-2xl mt-20 text-gray-400">UI/UX Projects</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+            {uiuxProjects.map(({ id, image, title, link }) => (
+              <a
+                key={id}
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="relative group">
+                  <img
+                    src={image}
+                    alt={title}
+                    className="rounded-lg object-cover w-full h-60 transform transition duration-300 group-hover:scale-105"
+                  />
+                  
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+
       </div>
     </div>
   );
