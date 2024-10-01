@@ -3,7 +3,7 @@ import { MdDownload } from "react-icons/md";
 
 const About = () => {
   const fileUrl =
-    "https://drive.google.com/file/d/12Fml_1CJ6tYdKBH5tC9b6STLxzrssYD7/view?usp=sharing";
+    "https://drive.google.com/file/d/1oGY8cUx5q2qRr1LA8yPGqU1lKItYnhVt/view?usp=sharing";
   return (
     <div
       name="about"
