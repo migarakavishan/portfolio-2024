@@ -163,7 +163,8 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white h-full py-20"
+      className="relative bg-gradient-to-t from-gray-900 to-black w-full text-white overflow-hidden py-24 px-4"
+
     >
       <div className="max-w-screen-lg mx-auto text-white p-4">
         <div>

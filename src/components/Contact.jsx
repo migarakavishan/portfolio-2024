@@ -6,7 +6,8 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="bg-gradient-to-t from-black to-gray-800 w-full text-white h-full py-24"
+      className="relative bg-gradient-to-b from-gray-900 to-black w-full text-white overflow-hidden py-24 px-4"
+
     >
       <div className="max-w-screen-lg mx-auto text-white p-4">
         <motion.div
