@@ -7,6 +7,7 @@ import Home from "./Home";
 import Portfolio from "./Portfolio";
 import Qualification from "./Qualification";
 
+
 export {
   NavBar,
   About,
