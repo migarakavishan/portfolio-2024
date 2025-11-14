@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import ProfileImage from "../assets/yellopro2.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { ReactTyped } from "react-typed";
 
 const Home = () => {
   return (
@@ -16,23 +17,31 @@ const Home = () => {
       <div className="absolute bottom-20 right-20 w-72 h-72 bg-blue-700/20 rounded-full blur-3xl animate-pulse"></div>
 
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full py-10 sm:py-52 px-4 md:flex-row relative z-10">
-
         {/* Text Section */}
         <motion.div
           variants={fadeIn("right", 0.4)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          initial="show"
           className="flex flex-col justify-center my-20"
         >
           <h2 className="text-4xl sm:text-5xl font-bold text-white leading-tight">
-            I'm a <span className="text-cyan-400">Flutter Mobile App Developer</span>
+            I'm a{" "}
+            <ReactTyped
+              className="text-cyan-400"
+              strings={["Flutter Mobile App Developer"]}
+              typeSpeed={50}
+              showCursor={false}
+            />
           </h2>
 
           <p className="text-gray-400 py-4 max-w-md">
-            Hello! I'm <span className="text-cyan-400 font-bold">Migara Kavishan</span>, 
-            passionate about building high-quality mobile applications for both iOS and Android. 
-            I create apps that focus on <span className="font-semibold text-white">performance, design, and user experience</span>.
+            Hello! I'm{" "}
+            <span className="text-cyan-400 font-bold">Migara Kavishan</span>,
+            passionate about building high-quality mobile applications for both
+            iOS and Android. I create apps that focus on{" "}
+            <span className="font-semibold text-white">
+              performance, design, and user experience
+            </span>
+            .
           </p>
 
           <div className="mt-4">
