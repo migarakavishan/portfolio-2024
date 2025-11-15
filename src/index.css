@@ -5,3 +5,13 @@
 @tailwind utilities;
 
 
+input,
+textarea,
+select {
+  cursor: text !important;
+}
+
+button,
+a {
+  cursor: pointer;
+}

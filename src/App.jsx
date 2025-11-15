@@ -8,12 +8,14 @@ import {
   Portfolio,
   Qualification,
 } from "./components";
+import SmoothCursor from "./components/SmoothCursor.jsx";
 
 
 
 function App() {
   return (
-    <main>
+    <main className="relative cursor-none">
+    <SmoothCursor />
       <NavBar />
       <Home />
       <About />
