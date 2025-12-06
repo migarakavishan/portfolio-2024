@@ -14,7 +14,7 @@ const fadeInUp = {
 
 const About = () => {
   const fileUrl =
-    "https://drive.google.com/file/d/1hG_R39GKaXwf-kRjn-Ra0m53Y4Z_ZgUm/view?usp=sharing";
+    "https://drive.google.com/file/d/1T2yizv6bemkRKTjQ_C6hcFcKX53yIBN5/view?usp=sharing";
 
   return (
     <motion.div
