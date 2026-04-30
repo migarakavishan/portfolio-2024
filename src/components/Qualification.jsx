@@ -100,7 +100,7 @@ const Qualification = () => {
         </motion.div>
 
         {/* 💼 Work Experience Section */}
-        <motion.div
+        {/* <motion.div
           custom={0.7}
           variants={fadeInUp}
         >
@@ -135,7 +135,7 @@ const Qualification = () => {
               </motion.li>
             </motion.ol>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </motion.div>
   );
